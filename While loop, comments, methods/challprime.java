@@ -24,7 +24,7 @@ public class challprime {
                     System.out.println("Exiting the program.");
                     break;
                 } else {
-                    System.out.println("Enter a valid second number.");
+                    System.out.println("Enter a valid number.");
                     input.nextLine();
                 }
             }
@@ -32,7 +32,6 @@ public class challprime {
     }
 
     public String prime(int a){
-        boolean isprime = true;
         if(a==1){
             return "Not Prime";
         }
@@ -42,11 +41,10 @@ public class challprime {
         else{
             for(int i = 2; i<=Math.sqrt(a) ; i++){
                 if( a%i == 0 ){
-                    isprime = false;
                     return "Not Prime";
                 }
             }
         }
-        return "prime";
+        return "Prime";
     }
 }
